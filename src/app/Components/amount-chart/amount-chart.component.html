@@ -1,0 +1,4 @@
+<p-dialog header="Amount Chart" [(visible)]="VisibleAmountChart" [modal]="true"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '35vw' }" (visibleChange)="HideChart()">
+    <p-chart type="line" [data]="data" [options]="options" />
+</p-dialog>
